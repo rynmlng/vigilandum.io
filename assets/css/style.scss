@@ -104,4 +104,11 @@ footer {
   }
 
   #navbar_carousel { max-width: 480px; }
+
+  @media screen and (max-width: 380px) {
+    #main_content #word #pronunciation {
+      display: block;
+      margin-left: 15px;
+    }
+  }
 }
