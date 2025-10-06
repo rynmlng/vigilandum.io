@@ -1,3 +1,21 @@
-title: Vigilandum
-description: A dictionary-style landing page
-theme: al-folio
+# Site settings
+email: sudo@vigilandum.io
+
+title: vigilandum.io
+word: vig·i·lan·dum
+pronunciation: wi.ɡiˈlan.dum
+part_of_speech: noun
+definitions:
+  - be awake, watch, be vigilant<br/>
+  - a paramount step to beautiful software development
+
+baseurl: ""
+url: "https://vigilandum.io"
+github_username: rynmlng
+
+# Build settings
+remote_theme: pages-themes/slate@v0.2.0
+plugins:
+- jekyll-remote-theme
+- jekyll-seo-tag
+- jekyll-sitemap
