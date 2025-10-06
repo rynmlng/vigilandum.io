@@ -83,7 +83,7 @@ footer {
 }
 
 /* mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   h1 { font-size: 24px; }
   h2 { font-size: 21px; }
   h3 { font-size: 18px; }
@@ -98,7 +98,7 @@ footer {
   #main_content {
     padding-bottom: 30px;
     padding-top: 30px;
-    #definition, #part_of_speech {
+    #definitions, #part_of_speech {
       font-size: 16px;
     }
   }
