@@ -1,0 +1,107 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* colors */
+$dark-grey: #222222;
+$graphite: #1c1c1c;
+$grey: #828282;
+$light-grey: #e0e0e0;
+$white: #ffffff;
+
+/* overrides */
+a {
+  color: $dark-grey;
+}
+
+h1, h2, h3 {
+  display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: $white;
+  color: $graphite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+footer {
+  a, p {
+    color: $graphite;
+  }
+}
+
+#main_content {
+  padding: 60px 10px;
+  text-align: left;
+  #word {
+    margin-top: 15px;
+  }
+  #part_of_speech {
+    color: $grey;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #pronunciation {
+    color: $grey;
+    margin-left: 20px;
+  }
+  #definitions {
+    font-size: 18px;
+    padding-left: 40px;
+  }
+}
+
+#navbar_carousel {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 30px 10px 60px;
+  text-align: left;
+  .title {
+    color: $graphite;
+    margin-bottom: 0;
+  }
+  .carousel_container {
+    max-width: 590px;
+    img {
+      border-radius: 6px;
+      cursor: pointer;
+      max-height: 150px;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+#footer_wrap {
+  background: $white;
+  text-align: left;
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+  h1 { font-size: 24px; }
+  h2 { font-size: 21px; }
+  h3 { font-size: 18px; }
+  h4 { font-size: 14px; }
+  h5 { font-size: 12px; }
+  h6 { font-size: 10px; }
+
+  #footer_wrap .inner {
+    padding-top: 0;
+  }
+
+  #main_content {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    #definition, #part_of_speech {
+      font-size: 16px;
+    }
+  }
+
+  #navbar_carousel { max-width: 480px; }
+}
